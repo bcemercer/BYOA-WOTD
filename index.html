@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word of the Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word of the Day</h1>
+        <div class="word-card">
+            <h2 id="word" class="fade-in"></h2>
+            <p id="pronunciation"></p>
+            <p id="definition" class="fade-in"></p>
+            <p id="date"></p>
+            <div class="button-group">
+                <button id="newWordBtn" class="btn">New Word</button>
+                <button id="copyBtn" class="btn">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+            </div>
+            <div id="history">
+                <h3>Previously Seen Words</h3>
+                <ul id="wordHistory"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
